@@ -1,0 +1,390 @@
+/* @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); */
+
+body {
+  font: 15px/1.5 Inconsolata, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #2f2f30;
+  font-size: 60px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Header */
+header {
+  /* background: #35424a; */
+  background: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  padding-top: 10px;
+  min-height: 50px;
+  /* border-bottom: #e8491d 3px solid; */
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  letter-spacing: 3px;
+  float: right;
+  margin-top: 10px;
+  color: #dbdbdb;
+}
+
+header .highlight, header .current a {
+  color: #dbdbdb;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+/* #showcase {
+  min-height: 800px;
+  background: url('img/hero.jpg') no-repeat;
+} */
+
+/* Hero */
+#hero {
+  /* color: #282d2c; */
+  color: #ffffff;
+  text-align: center;
+}
+
+#hero h1 {
+  font-family: Source Code Pro, Inconsolata, sans-serif;
+  letter-spacing: 5px;
+  margin-top: 400px;
+  font-size: 90px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: 5px solid white;
+  display: inline-block;
+  padding: 0 25px 0 25px;
+}
+
+#hero p {
+  color: #282d2c;
+  font-size: 25px;
+  margin-bottom: 400px;
+}
+
+video#bgvideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(placeholder.jpg) no-repeat;
+  background-size: cover;
+}
+
+#about {
+  background: #c7cdd0;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  color: #2f2f30;
+  font-size: 18px;
+  min-height: 750px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h2 {
+  margin: 0;
+  font-family: Source Code Sans, Inconsolata, sans-serif;
+  font-weight: bold;
+  /* font-size: 50px; */
+  letter-spacing: 5px;
+  justify-content: center;
+}
+
+#about img {
+  margin-right: 50px;
+  align-self: center;
+
+}
+
+#about .bio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding: 10px 0; */
+  justify-content: center;
+}
+
+/* #about .bio {
+  display: inline-block;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+} */
+
+#about .description {
+  max-width: 500px;
+  line-height: 1.8;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* #about .description {
+  max-width: 500px;
+  line-height: 1.8;
+  display: inline-block;
+  justify-content: center;
+} */
+
+/* #about .container {
+  padding-left: 200px;
+}
+
+
+#about .bio {
+  padding-top: 70px;
+  height: auto;
+  width: 90%;
+  line-height: 1.8;
+} */
+
+#portfolio {
+  background: url('img/cottoncandy.jpg');
+  text-align: center;
+  min-height: 750px;
+}
+
+#portfolio h2 {
+  margin-top: 150px;
+  font-family: Source Code Sans, Inconsolata, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 10px;
+}
+
+#portfolio p {
+  margin-bottom: 150px;
+  color: #2f2f30;
+  display: inline-table;
+}
+
+#portfolio .container {
+  margin: 0;
+  width: 100%;
+}
+
+.iframe-resize {
+  /* padding-left: 200px;
+  padding-right: 200px; */
+  padding: 0 20% 0 20%;
+}
+
+
+.resp-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.resp-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#contact {
+    text-align: center;
+    min-height: 750px;
+    background: #c7cdd0;
+}
+#contact h2 {
+  margin-top: 130px;
+  font-family: Source Code Sans, Inconsolata, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 10px;
+}
+
+.form-style {
+  font-family: Inconsolata;
+  letter-spacing: 3px;
+  border: 1px solid #2f2f30;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  width: 450px;
+}
+
+textarea[name="message"] {
+  height: 150px;
+  margin-bottom: -10px;
+}
+
+.button {
+  font-family: Inconsolata;
+  letter-spacing: 3px;
+  background-color: #2f2f30;
+  color: lightgrey;
+  border: none;
+  padding: 20px 40px 20px 40px;
+  margin-top: -100px;
+  margin-bottom: 150px;
+
+}
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* Style inputs */
+/* input[type=text],[type=email], select, textarea {
+  font-family: Inconsolata, sans-serif;
+  letter-spacing: 3px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #2f2f30;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=subject] {
+  font-family: Inconsolata, sans-serif;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 200px;
+  padding: 12px;
+  border: 1px solid #2f2f30;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  font-family: Inconsolata, sans-serif;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+form {
+  margin: 0 auto;
+  width:500px;
+}
+
+#contact {
+    text-align: center;
+    min-height: 750px;
+    background: #c7cdd0;
+}
+#contact h2 {
+  margin-top: 150px;
+  font-family: Source Code Sans, Inconsolata, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 10px;
+}
+
+#contact .container {
+  text-align: center;
+} */
+/* Style the container/contact section */
+/* #contact .column {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: inline-block;
+} */
+
+/* Create two columns that float next to eachother */
+/* .column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+} */
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+} */
+
+footer {
+  padding: 20px;
+  margin-top: 5px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
